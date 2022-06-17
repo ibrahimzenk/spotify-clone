@@ -1,8 +1,18 @@
+import { BrowserRouter } from "react-router-dom";
+
+import Sidebar from "./components/Sidebar";
+import Content from "./components/Content";
+import Bottombar from "./components/Bottombar";
+
 function App() {
   return (
-    <div>
-      <h2 className="text-3xl font-bold underline">Deneme</h2>
-    </div>
+    <BrowserRouter>
+      <div className="wrapper">
+        <Sidebar />
+        <Content />
+      </div>
+      <Bottombar />
+    </BrowserRouter>
   );
 }
 
