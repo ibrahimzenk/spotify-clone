@@ -4,7 +4,7 @@ import { secondsToTime } from "../../utils";
 import CustomRange from "../CustomRange";
 import { useEffect, useMemo } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { setControls, setPlaying, setSidebar } from "../../stores/player";
+import { setControls, setPlaying, setSidebar } from "../../store/player";
 
 function Player() {
   const dispatch = useDispatch();

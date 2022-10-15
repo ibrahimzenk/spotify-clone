@@ -1,6 +1,6 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { setSidebar } from "../../stores/player";
+import { setSidebar } from "../../store/player";
 import { Icon } from "../../Icons";
 
 function SidebarCover() {

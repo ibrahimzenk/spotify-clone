@@ -1,7 +1,7 @@
 import { useDispatch, useSelector } from "react-redux";
 import { NavLink } from "react-router-dom";
 import { Icon } from "../Icons";
-import { setCurrent } from "../stores/player";
+import { setCurrent } from "../store/player";
 
 function SongItem({ item }) {
   const dispatch = useDispatch();
