@@ -1,20 +1,7 @@
 import { NavLink } from "react-router-dom";
-import { Icon } from "../Icons";
+import SongItem from "./SongItem";
 
-function Section({ title, more, items }) {
-  const imageStyle = (item) => {
-    switch (item.type) {
-      case "Artist":
-        return "rounded-full";
-
-      case "Podcast":
-        return "rounded-xl";
-
-      default:
-        return "rounded";
-    }
-  };
-
+function Section({ title, more = false, items }) {
   return (
     <section>
       <header className="flex items-center justify-between mb-4">
@@ -31,19 +18,7 @@ function Section({ title, more, items }) {
 
       <div className="grid grid-cols-5 gap-x-6">
         {items.map((item) => (
-          <NavLink key={item.id} to="/" className="bg-footer p-4 rounded hover:bg-active group">
-            <div className="pt-[100%] relative mb-4">
-              <img src={item.image} className={`absolute inset-0 object-cover w-full h-full ${imageStyle(item)}`} />
-
-              <button className="w-10 h-10 rounded-full bg-primary absolute bottom-2 right-2 items-center justify-center hidden group-hover:flex">
-                <Icon name="play" size={16} />
-              </button>
-            </div>
-
-            <h6 className="overflow-hidden overflow-ellipsis whitespace-nowrap text-base font-semibold">{item.title}</h6>
-
-            <p className="line-clamp-2 text-link text-sm mt-1">{item.description}</p>
-          </NavLink>
+          <SongItem item={item} key={item.id} />
         ))}
       </div>
     </section>
