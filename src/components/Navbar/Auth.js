@@ -18,7 +18,7 @@ function Auth() {
               <Icon name="downDir" size={16} />
             </span>
           </Menu.Button>
-          <Menu.Items className="absolute top-full right-0 w-48 p-1 rounded bg-active translate-y-2">
+          <Menu.Items className="absolute top-full right-0 w-48 p-1 rounded bg-active translate-y-2 z-10">
             <Menu.Item>
               {({ active }) => (
                 <a className={`h-10 flex justify-between items-center px-2 text-sm rounded ${active && "bg-white bg-opacity-10"}`} href="#not">
