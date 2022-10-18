@@ -1,3 +1,14 @@
+const LogoIcon = ({ size }) => {
+  return (
+    <svg role="img" viewBox="0 0 16 16" height={size} width={size}>
+      <path
+        d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.669 11.539a.498.498 0 0 1-.686.166c-1.878-1.148-4.243-1.408-7.028-.772a.499.499 0 0 1-.222-.972c3.048-.696 5.662-.396 7.77.892a.5.5 0 0 1 .166.686zm.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.322-5.428-1.705-7.972-.932a.624.624 0 1 1-.362-1.194c2.905-.882 6.517-.455 8.987 1.063a.624.624 0 0 1 .205.858zm.084-2.269C10.153 5.561 5.9 5.42 3.438 6.167a.748.748 0 1 1-.434-1.432c2.826-.857 7.523-.692 10.492 1.07a.748.748 0 0 1-.764 1.287z"
+        fill="currentColor"
+      />
+    </svg>
+  );
+};
+
 const HomeIcon = ({ size }) => {
   return (
     <svg role="img" viewBox="0 0 24 24" height={size} width={size}>
@@ -275,6 +286,17 @@ const FullScreenIcon = ({ size }) => {
   );
 };
 
+const FullScreenOffIcon = ({ size }) => {
+  return (
+    <svg role="img" height={size} width={size} viewBox="0 0 24 24">
+      <path
+        d="M21.707 2.293a1 1 0 010 1.414L17.414 8h1.829a1 1 0 010 2H14V4.757a1 1 0 112 0v1.829l4.293-4.293a1 1 0 011.414 0zM2.293 21.707a1 1 0 010-1.414L6.586 16H4.757a1 1 0 010-2H10v5.243a1 1 0 01-2 0v-1.829l-4.293 4.293a1 1 0 01-1.414 0z"
+        fill="currentColor"
+      />
+    </svg>
+  );
+};
+
 const ArrowUpIcon = ({ size }) => {
   return (
     <svg role="img" height={size} width={size} viewBox="0 0 16 16">
@@ -285,6 +307,7 @@ const ArrowUpIcon = ({ size }) => {
 
 const Icon = ({ name, size = 24 }) => {
   const icons = {
+    logo: LogoIcon,
     home: HomeIcon,
     search: SearchIcon,
     collection: CollectionIcon,
@@ -312,6 +335,7 @@ const Icon = ({ name, size = 24 }) => {
     volumeMedium: VolumeMediumIcon,
     volumeHigh: VolumeHighIcon,
     fullScreen: FullScreenIcon,
+    fullScreenOff: FullScreenOffIcon,
     arrowUp: ArrowUpIcon,
   };
 
