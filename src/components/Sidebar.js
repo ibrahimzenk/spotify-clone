@@ -22,7 +22,7 @@ function Sidebar() {
       <nav className="mt-6">
         <ul>
           <li>
-            <a href="#" className="px-6 py-2 flex items-center group text-sm text-link font-semibold hover:text-white">
+            <a href="/" className="px-6 py-2 flex items-center group text-sm text-link font-semibold hover:text-white">
               <span className="w-6 h-6 mr-4 flex items-center justify-center bg-white bg-opacity-60 group-hover:bg-opacity-100 rounded-sm text-black">
                 <Icon name="plus" size={12} />
               </span>
@@ -30,7 +30,7 @@ function Sidebar() {
             </a>
           </li>
           <li>
-            <a href="#" className="px-6 py-2 flex items-center group text-sm text-link font-semibold hover:text-white">
+            <a href="/" className="px-6 py-2 flex items-center group text-sm text-link font-semibold hover:text-white">
               <span className="w-6 h-6 mr-4 flex items-center justify-center bg-gradient-to-br from-purple-700 to-blue-300 opacity-60 group-hover:opacity-100 rounded-sm text-white">
                 <Icon name="heartFilled" size={12} />
               </span>
